@@ -1,0 +1,11 @@
+OMM bxm.dft.smp.online.service.dto.SSMP1003A003OutDto
+<description="페이징조회 Output">
+{
+	Integer reqCount<length=5 description="조회요청건수">;
+	Integer nextFeduEmpNo<length=4 description="FW샘플 임직원번호">;
+	String nextFeduEmpNm<length=8 description="FW샘플 임직원명">;
+	String hasNext<length=1 description="다음데이터존재여부">;
+	Integer grid01_COUNT<length=5 description="반복횟수">;
+	Integer grid01_STARTLINE<length=2 description="시작라인">;
+	bxm.dft.smp.online.service.dto.SSMP1003A003OutDtoSubGrid01 grid01<length=0 arrayReference="grid01_COUNT" description="grid01">;
+}

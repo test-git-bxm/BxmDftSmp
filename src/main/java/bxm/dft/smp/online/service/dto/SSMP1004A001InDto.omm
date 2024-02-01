@@ -1,0 +1,12 @@
+OMM bxm.dft.smp.online.service.dto.SSMP1004A001InDto
+<description="다이나믹쿼리 Input">
+{
+	String gubun<length=2 description="메소드구분">;
+	Integer feduEmpNo<length=4 description="FW샘플 임직원번호">;
+	String feduEmpNm<length=10 description="FW샘플 임직원명">;
+	String feduOccpNm<length=9 description="FW샘플 직업명">;
+	Integer feduMngrEmpNo<length=4 description="FW샘플 관리자임직원번호">;
+	String feduIpsaDt<length=8 description="FW샘플 입사일자">;
+	BigDecimal feduPayAmt<length=19 decimal=2 description="FW샘플 급여금액">;
+	Integer feduDeptNo<length=2 description="FW샘플 부서번호">;
+}

@@ -1,0 +1,5 @@
+OMM bxm.dft.smp.online.service.dto.SSMP1007A001InDto
+<description="온디맨드배치호출 Input">
+{
+	Integer feduDeptNo<length=2 description="FW샘플 부서번호">;
+}

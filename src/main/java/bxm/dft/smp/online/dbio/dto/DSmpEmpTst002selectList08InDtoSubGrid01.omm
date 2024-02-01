@@ -1,0 +1,5 @@
+OMM bxm.dft.smp.online.dbio.dto.DSmpEmpTst002selectList08InDtoSubGrid01
+<description="Employee Info TST SUB">
+{
+	Integer feduEmpNo<length=4 description="Employee id">;
+}

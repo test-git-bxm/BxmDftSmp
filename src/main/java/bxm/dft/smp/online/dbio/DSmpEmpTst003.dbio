@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bxm.dft.smp.online.dbio.DSmpEmpTst003">
+<!--Generated Thu May 02 15:21:14 KST 2019-->
+<select id="selectMultiEmpList" resultType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst003selectList01Out">
+SELECT
+       FEDU_EMP_NO AS feduEmpNo,
+       FEDU_EMP_NM AS feduEmpNm,
+       FEDU_OCCP_NM AS feduOccpNm,
+       FEDU_MNGR_EMP_NO AS feduMngrEmpNo,
+       FEDU_HIRE_DT AS feduIpsaDt,
+       FEDU_PAY_AMT AS feduPayAmt,
+       FEDU_DEPT_NO AS feduDeptNo,
+  FROM smp_emp_tst
+ WHERE FEDU_EMP_NO = #{feduEmpNo}
+</select>
+</mapper>

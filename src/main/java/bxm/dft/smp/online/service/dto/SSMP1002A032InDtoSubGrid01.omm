@@ -1,0 +1,5 @@
+OMM bxm.dft.smp.online.service.dto.SSMP1002A032InDtoSubGrid01
+<description="다건삭제1 Sub Output">
+{
+	Integer feduEmpNo<length=4 description="FW교육임직원번호">;
+}

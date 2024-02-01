@@ -1,0 +1,8 @@
+OMM bxm.dft.smp.online.service.dto.SSMP1008A001InDto
+<description="속보메세지 Input">
+{
+	Integer brno<length=4 description="점번호">;
+	Integer trmno<length=4 description="단말기번">;
+	String chanU<length=2 description="채널유형">;
+	String messsage<length=100 description="속도메세지">;
+}

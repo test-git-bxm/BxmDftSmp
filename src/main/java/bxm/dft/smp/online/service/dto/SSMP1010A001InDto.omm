@@ -1,0 +1,5 @@
+OMM bxm.dft.smp.online.service.dto.SSMP1010A001InDto
+<description="책임자승인처리 Input">
+{
+	BigDecimal cashCmt<length=15 description="지급액">;
+}

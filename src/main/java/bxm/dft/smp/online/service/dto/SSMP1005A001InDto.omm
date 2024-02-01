@@ -1,0 +1,5 @@
+OMM bxm.dft.smp.online.service.dto.SSMP1005A001InDto
+<description="내부연동 Input">
+{
+	Integer feduEmpNo<length=4 description="FW교육임직원번호">;
+}

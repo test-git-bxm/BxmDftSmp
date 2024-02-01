@@ -1,0 +1,9 @@
+OMM bxm.dft.smp.online.service.dto.SSMP1003A001OutDto
+<description="페이징조회 Output">
+{
+	Integer pageNum<length=5 description="pageNum">;
+	Integer pageCount<length=5 description="pageCount">;
+	Integer grid01_COUNT<length=5 description="반복횟수">;
+	Integer grid01_STARTLINE<length=2 description="시작라인">;
+	bxm.dft.smp.online.service.dto.SSMP1003A001OutDtoSubGrid01 grid01<length=0 arrayReference="grid01_COUNT" description="grid01">;
+}

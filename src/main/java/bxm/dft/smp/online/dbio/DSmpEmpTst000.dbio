@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bxm.dft.smp.online.dbio.DSmpEmpTst000">
+<!--Generated Thu May 02 15:19:21 KST 2019-->
+<select id="selectOne00" parameterType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto" resultType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto">
+SELECT
+       A.FEDU_EMP_NO AS feduEmpNo
+     , A.FEDU_EMP_NM AS feduEmpNm
+     , A.FEDU_OCCP_NM AS feduOccpNm
+     , A.FEDU_MNGR_EMP_NO AS feduMngrEmpNo
+     , A.FEDU_HIRE_DT AS feduIpsaDt
+     , A.FEDU_PAY_AMT AS feduPayAmt
+     , A.FEDU_DEPT_NO AS feduDeptNo
+  FROM SMP_EMP_TST A
+ WHERE A.FEDU_EMP_NO = #{feduEmpNo}
+</select>
+<select id="selectOneLock00" parameterType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto" resultType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto">
+SELECT
+     A.ROWID AS "rowId"
+     , A.FEDU_EMP_NO AS feduEmpNo
+     , A.FEDU_EMP_NM AS feduEmpNm
+     , A.FEDU_OCCP_NM AS feduOccpNm
+     , A.FEDU_MNGR_EMP_NO AS feduMngrEmpNo
+     , A.FEDU_HIRE_DT AS feduIpsaDt
+     , A.FEDU_PAY_AMT AS feduPayAmt
+     , A.FEDU_DEPT_NO AS feduDeptNo
+  FROM SMP_EMP_TST A
+ WHERE A.FEDU_EMP_NO = #{feduEmpNo}
+
+   FOR UPDATE /* WAIT */
+</select>
+<update id="selectOneLock00__update__for__" parameterType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto">
+UPDATE smp_emp_tst
+SET
+    FEDU_EMP_NO = #{feduEmpNo, jdbcType=NUMERIC}
+    , FEDU_EMP_NM = #{feduEmpNm, jdbcType=VARCHAR}
+    , FEDU_OCCP_NM = #{feduOccpNm, jdbcType=VARCHAR}
+    , FEDU_MNGR_EMP_NO = #{feduMngrEmpNo, jdbcType=NUMERIC}
+    , FEDU_HIRE_DT = #{feduIpsaDt, jdbcType=VARCHAR}
+    , FEDU_PAY_AMT = #{feduPayAmt, jdbcType=NUMERIC}
+    , FEDU_DEPT_NO = #{feduDeptNo, jdbcType=NUMERIC}
+WHERE ROWID= #{rowId}
+</update>
+<update id="update00" parameterType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto">
+UPDATE SMP_EMP_TST
+   SET FEDU_EMP_NM = #{feduEmpNm, jdbcType=VARCHAR}
+     , FEDU_OCCP_NM = #{feduOccpNm, jdbcType=VARCHAR}
+     , FEDU_MNGR_EMP_NO = #{feduMngrEmpNo, jdbcType=NUMERIC}
+     , FEDU_HIRE_DT = #{feduIpsaDt, jdbcType=VARCHAR}
+     , FEDU_PAY_AMT = #{feduPayAmt, jdbcType=NUMERIC}
+     , FEDU_DEPT_NO = #{feduDeptNo, jdbcType=NUMERIC}
+ WHERE FEDU_EMP_NO = #{feduEmpNo}
+</update>
+<delete id="delete00" parameterType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto">
+DELETE FROM SMP_EMP_TST
+ WHERE FEDU_EMP_NO = #{feduEmpNo}
+</delete>
+<insert id="insert00" parameterType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto">
+INSERT INTO SMP_EMP_TST    /* 샘플용직원정보TST */
+(
+       FEDU_EMP_NO    /*FW샘플 임직원번호*/
+     , FEDU_EMP_NM    /*FW샘플 임직원명*/
+     , FEDU_OCCP_NM    /*FW샘플 직업명*/
+     , FEDU_MNGR_EMP_NO    /*FW샘플 관리자임직원번호*/
+     , FEDU_HIRE_DT    /*FW샘플 입사일자*/
+     , FEDU_PAY_AMT    /*FW샘플 급여금액*/
+     , FEDU_DEPT_NO    /*FW샘플 부서번호*/
+)
+VALUES 
+(
+       #{feduEmpNo, jdbcType=NUMERIC}    /*FW샘플 임직원번호*/
+     , #{feduEmpNm, jdbcType=VARCHAR}    /*FW샘플 임직원명*/
+     , #{feduOccpNm, jdbcType=VARCHAR}    /*FW샘플 직업명*/
+     , #{feduMngrEmpNo, jdbcType=NUMERIC}    /*FW샘플 관리자임직원번호*/
+     , #{feduIpsaDt, jdbcType=VARCHAR}    /*FW샘플 입사일자*/
+     , #{feduPayAmt, jdbcType=NUMERIC}    /*FW샘플 급여금액*/
+     , #{feduDeptNo, jdbcType=NUMERIC}    /*FW샘플 부서번호*/
+)
+</insert>
+<select id="selectOne01" parameterType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto" resultType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto">
+SELECT
+       FEDU_EMP_NO AS feduEmpNo,
+       FEDU_EMP_NM AS feduEmpNm,
+       FEDU_OCCP_NM AS feduOccpNm,
+       FEDU_MNGR_EMP_NO AS feduMngrEmpNo,
+       FEDU_HIRE_DT AS feduIpsaDt,
+       FEDU_PAY_AMT AS feduPayAmt,
+       FEDU_DEPT_NO AS feduDeptNo
+  FROM smp_emp_tst
+ WHERE FEDU_EMP_NO = #{feduEmpNo}
+ FOR UPDATE NOWAIT
+</select>
+</mapper>

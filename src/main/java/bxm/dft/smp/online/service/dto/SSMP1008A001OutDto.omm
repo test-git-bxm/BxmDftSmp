@@ -1,0 +1,5 @@
+OMM bxm.dft.smp.online.service.dto.SSMP1008A001OutDto
+<description="속보메세지 Output">
+{
+	String succYn<length=1 description="성공여부">;
+}

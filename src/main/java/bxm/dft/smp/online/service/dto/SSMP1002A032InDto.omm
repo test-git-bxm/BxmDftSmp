@@ -1,0 +1,7 @@
+OMM bxm.dft.smp.online.service.dto.SSMP1002A032InDto
+<description="다건삭제2 Input">
+{
+	Integer grid01_COUNT<length=5 description="반복횟수">;
+	Integer grid01_STARTLINE<length=2 description="시작라인">;
+	bxm.dft.smp.online.service.dto.SSMP1002A032InDtoSubGrid01 grid01<length=0 arrayReference="grid01_COUNT" description="grid01">;
+}

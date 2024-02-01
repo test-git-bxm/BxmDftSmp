@@ -1,0 +1,25 @@
+#TestCaseName=단건 등록
+#EndpointUrl=http://bankware:30018/serviceEndpoint/httpService/request.obj
+#EndpointUrlAvailable=http://bankware:30018/serviceEndpoint/httpService/request.obj
+#EndpointUrlAvailable=http://bankware:9502/serviceEndpoint/httpService/request.fld
+#TrxMode=
+#InputHeader=
+<header default="true">
+<trxCd>SSMP1001A002</trxCd>
+<chlType>01</chlType>
+<msgReqDttm>20160906144649029</msgReqDttm>
+<domainId>DEFAULT</domainId>
+</header>
+#InputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1001A002InDto
+#InputOmm=
+<SSMP1001A002InDto>
+    <feduEmpNo>7778</feduEmpNo>
+    <feduEmpNm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    <feduOccpNm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    <feduMngrEmpNo>0</feduMngrEmpNo>
+    <feduIpsaDt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    <feduPayAmt>5000</feduPayAmt>
+    <feduDeptNo>10</feduDeptNo>
+</SSMP1001A002InDto>
+
+#OutputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1001A002OutDto

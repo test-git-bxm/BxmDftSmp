@@ -1,0 +1,11 @@
+OMM bxm.dft.smp.online.service.dto.SSMP1001A002InDto
+<description="단건등록 Input">
+{
+	Integer feduEmpNo<length=4 description="FW교육임직원번호">;
+	String feduEmpNm<length=10 description="FW교육임직원명">;
+	String feduOccpNm<length=9 description="FW교육직업명">;
+	Integer feduMngrEmpNo<length=4 description="FW교육관리자임직원번호">;
+	String feduIpsaDt<length=8 description="FW교육입사일자">;
+	BigDecimal feduPayAmt<length=19 decimal=2 description="FW교육급여금액">;
+	Integer feduDeptNo<length=2 description="FW교육부서번호">;
+}

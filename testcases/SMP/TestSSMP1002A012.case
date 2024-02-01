@@ -1,0 +1,28 @@
+#TestCaseName=다건 등록(Bean의 입력 값으로 List 사용)
+#EndpointUrl=http://bankware:30018/serviceEndpoint/httpService/request.obj
+#EndpointUrlAvailable=http://bankware:30018/serviceEndpoint/httpService/request.obj
+#TrxMode=
+#InputHeader=
+<header default="true">
+<trxCd>SSMP1002A012</trxCd>
+<chlType>01</chlType>
+<msgReqDttm>20160906144649029</msgReqDttm>
+<domainId>DEFAULT</domainId>
+</header>
+#InputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1002A012InDto
+#InputOmm=
+<SSMP1002A012InDto>
+    <grid01_COUNT>1</grid01_COUNT>
+    <grid01_STARTLINE>0</grid01_STARTLINE>
+    <grid01>
+        <feduEmpNo>1230</feduEmpNo>
+        <feduEmpNm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <feduOccpNm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <feduMngrEmpNo>0</feduMngrEmpNo>
+        <feduIpsaDt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <feduPayAmt>0.0</feduPayAmt>
+        <feduDeptNo>0</feduDeptNo>
+    </grid01>
+</SSMP1002A012InDto>
+
+#OutputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1002A012OutDto

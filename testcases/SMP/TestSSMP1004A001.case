@@ -1,0 +1,25 @@
+#TestCaseName=다건 조회(Dynamic Query 사용)
+#EndpointUrl=http://bankware:30018/serviceEndpoint/httpService/request.obj
+#EndpointUrlAvailable=http://bankware:30018/serviceEndpoint/httpService/request.obj
+#TrxMode=
+#InputHeader=
+<header default="true">
+<trxCd>SSMP1004A001</trxCd>
+<chlType>01</chlType>
+<msgReqDttm>20160906144649029</msgReqDttm>
+<domainId>DEFAULT</domainId>
+</header>
+#InputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1004A001InDto
+#InputOmm=
+<SSMP1004A001InDto>
+    <gubun>A</gubun>
+    <feduEmpNo>7841</feduEmpNo>
+    <feduEmpNm></feduEmpNm>
+    <feduOccpNm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    <feduMngrEmpNo>0</feduMngrEmpNo>
+    <feduIpsaDt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    <feduPayAmt>0.0</feduPayAmt>
+    <feduDeptNo>0</feduDeptNo>
+</SSMP1004A001InDto>
+
+#OutputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1004A001OutDto

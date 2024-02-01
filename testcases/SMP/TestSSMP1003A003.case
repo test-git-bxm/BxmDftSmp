@@ -1,0 +1,21 @@
+#TestCaseName=페이징 조회(Next-Key 방식)
+#EndpointUrl=http://bankware:30018/serviceEndpoint/httpService/request.obj
+#EndpointUrlAvailable=http://bankware:30018/serviceEndpoint/httpService/request.obj
+#TrxMode=
+#InputHeader=
+<header default="true">
+<trxCd>SSMP1003A003</trxCd>
+<chlType>01</chlType>
+<msgReqDttm>20160906144649029</msgReqDttm>
+<domainId>DEFAULT</domainId>
+</header>
+#InputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1003A003InDto
+#InputOmm=
+<SSMP1003A003InDto>
+    <reqCount>4</reqCount>
+    <feduEmpNm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    <nextFeduEmpNo>7847</nextFeduEmpNo>
+    <nextFeduEmpNm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+</SSMP1003A003InDto>
+
+#OutputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1003A003OutDto

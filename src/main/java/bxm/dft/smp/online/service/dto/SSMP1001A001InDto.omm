@@ -1,0 +1,5 @@
+OMM bxm.dft.smp.online.service.dto.SSMP1001A001InDto
+<description="단건조회 Input">
+{
+	Integer feduEmpNo<length=6 description="FW교육임직원번호" validationRule="BXMVD0006[9999]">;
+}

@@ -1,0 +1,16 @@
+#TestCaseName=TestSSMP1006A001
+#EndpointUrl=http://182.162.100.120:9534/serviceEndpoint/httpService/request.obj
+#EndpointUrlAvailable=http://182.162.100.120:9534/serviceEndpoint/httpService/request.obj
+#TrxMode=
+#InputHeader=
+<header default="true">
+<trxCd>SSMP1006A001</trxCd>
+<chlType>01</chlType>
+</header>
+#InputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1006A001InDto
+#InputOmm=
+<SSMP1006A001InDto>
+    <feduEmpNo>7834</feduEmpNo>
+</SSMP1006A001InDto>
+
+#OutputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1006A001OutDto

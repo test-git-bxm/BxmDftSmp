@@ -1,0 +1,8 @@
+OMM bxm.dft.smp.online.service.dto.SSMP1003A003InDto
+<description="페이징조회 Input">
+{
+	Integer reqCount<length=5 description="조회요청건수">;
+	String feduEmpNm<length=10 description="FW샘플 임직원명">;
+	Integer nextFeduEmpNo<length=4 description="FW샘플 임직원번호">;
+	String nextFeduEmpNm<length=8 description="FW샘플 임직원명">;
+}

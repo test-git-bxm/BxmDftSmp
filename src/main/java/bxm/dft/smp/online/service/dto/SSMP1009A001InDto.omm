@@ -1,0 +1,7 @@
+OMM bxm.dft.smp.online.service.dto.SSMP1009A001InDto
+<description="업무로그 Input">
+{
+	Integer feduDeptNo<length=2 description="FW샘플 부서번호">;
+	String feduDeptNm<length=14 description="FW샘플 부서명">;
+	String feduAdrCtnt<length=13 description="FW샘플 주소내용">;
+}

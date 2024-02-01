@@ -1,0 +1,5 @@
+OMM bxm.dft.smp.online.inf.dto.EAI01SYER3101A400InDto
+<description="SMPON0100100_SSMP1001A001">
+{
+	Integer feduEmpNo<length=4 description="FW교육임직원번호">;
+}

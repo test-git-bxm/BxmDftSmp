@@ -1,0 +1,5 @@
+OMM bxm.dft.smp.online.service.dto.SSMP1002A012OutDto
+<description="다건등록2 Output">
+{
+	String succYn<length=1 description="성공여부">;
+}

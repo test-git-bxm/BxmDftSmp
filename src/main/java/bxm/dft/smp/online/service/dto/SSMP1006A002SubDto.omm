@@ -1,0 +1,12 @@
+OMM bxm.dft.smp.online.service.dto.SSMP1006A002SubDto
+<description="">
+{
+	Integer feduEmpNo<length=4 description="FW샘플 임직원번호" validationRule="BXMVD0006[10000]">;
+	String feduEmpNm<length=10 description="FW샘플 임직원명" validationRule="BXMVD0001">;
+	String feduOccpNm<length=9 description="FW샘플 직업명" validationRule="BXMVD0001">;
+	Integer feduMngrEmpNo<length=4 description="FW샘플 관리자임직원번호">;
+	String feduIpsaDt<length=8 description="FW샘플 입사일자">;
+	BigDecimal feduPayAmt<length=19 decimal=2 description="FW샘플 급여금액">;
+	Integer feduDeptNo<length=2 description="FW샘플 부서번호">;
+	String strList<length=20 arrayReference="1" validationRule="BXMVD0001">;
+}

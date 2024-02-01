@@ -1,0 +1,5 @@
+OMM bxm.dft.smp.online.service.dto.SSMP1001A004InDto
+<description="단건삭제 Input">
+{
+	Integer feduEmpNo<length=4 description="FW교육임직원번호">;
+}

@@ -1,0 +1,18 @@
+#TestCaseName=단건 조회(서비스 연동)
+#EndpointUrl=http://bankware:9534/serviceEndpoint/httpService/request.obj
+#EndpointUrlAvailable=http://bankware:9534/serviceEndpoint/httpService/request.obj
+#TrxMode=
+#InputHeader=
+<header default="true">
+<trxCd>SSMP1005A001</trxCd>
+<chlType>01</chlType>
+<msgReqDttm>20160906162046581</msgReqDttm>
+<domainId>DEFAULT</domainId>
+</header>
+#InputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1005A001InDto
+#InputOmm=
+<SSMP1005A001InDto>
+    <feduEmpNo>7840</feduEmpNo>
+</SSMP1005A001InDto>
+
+#OutputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1005A001OutDto

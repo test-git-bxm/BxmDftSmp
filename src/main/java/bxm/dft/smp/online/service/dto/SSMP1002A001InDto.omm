@@ -1,0 +1,5 @@
+OMM bxm.dft.smp.online.service.dto.SSMP1002A001InDto
+<description="다건조회1 Input">
+{
+	String feduEmpNm<length=10 description="FW교육임직원명">;
+}

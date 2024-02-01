@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bxm.dft.smp.online.dbio.DSmpEmpTst002">
+<!--Generated Thu May 02 15:21:06 KST 2019-->
+<select id="selectList01" parameterType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto" resultType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto">
+SELECT
+       A.FEDU_EMP_NO AS feduEmpNo
+     , A.FEDU_EMP_NM AS feduEmpNm
+     , A.FEDU_OCCP_NM AS feduOccpNm
+     , A.FEDU_MNGR_EMP_NO AS feduMngrEmpNo
+     , A.FEDU_HIRE_DT AS feduIpsaDt
+     , A.FEDU_PAY_AMT AS feduPayAmt
+     , A.FEDU_DEPT_NO AS feduDeptNo
+  FROM SMP_EMP_TST A
+ WHERE A.FEDU_EMP_NO = #{feduEmpNo, jdbcType=NUMERIC}
+ <if test="feduEmpNm !=null and feduEmpNm !=''">
+ 	AND A.FEDU_EMP_NM = #{feduEmpNm, jdbcType=VARCHAR}
+ </if>
+ <if test="feduOccpNm !=null and feduOccpNm !=''"> 
+ 	AND A.FEDU_OCCP_NM = #{feduOccpNm, jdbcType=VARCHAR}
+ </if>
+</select>
+<select id="selectList02" parameterType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto" resultType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto">
+SELECT
+       A.FEDU_EMP_NO AS feduEmpNo
+     , A.FEDU_EMP_NM AS feduEmpNm
+     , A.FEDU_OCCP_NM AS feduOccpNm
+     , A.FEDU_MNGR_EMP_NO AS feduMngrEmpNo
+     , A.FEDU_HIRE_DT AS feduIpsaDt
+     , A.FEDU_PAY_AMT AS feduPayAmt
+     , A.FEDU_DEPT_NO AS feduDeptNo
+  FROM SMP_EMP_TST A
+ WHERE A.FEDU_EMP_NO = #{feduEmpNo, jdbcType=NUMERIC}
+ <choose>
+ 	<when test="feduEmpNm !=null and feduEmpNm !=''">
+ 		AND A.FEDU_EMP_NM like #{feduEmpNm, jdbcType=VARCHAR}
+ 	</when>
+ 	<when test="feduOccpNm !=null and feduOccpNm !=''">
+ 		AND A.FEDU_OCCP_NM like #{feduOccpNm, jdbcType=VARCHAR}
+ 	</when>
+	<otherwise>
+		AND A.FEDU_MNGR_EMP_NO = #{feduMngrEmpNo, jdbcType=NUMERIC}
+	</otherwise>
+ </choose>
+</select>
+<select id="selectList05" parameterType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto" resultType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto">
+SELECT
+       A.FEDU_EMP_NO AS feduEmpNo
+     , A.FEDU_EMP_NM AS feduEmpNm
+     , A.FEDU_OCCP_NM AS feduOccpNm
+     , A.FEDU_MNGR_EMP_NO AS feduMngrEmpNo
+     , A.FEDU_HIRE_DT AS feduIpsaDt
+     , A.FEDU_PAY_AMT AS feduPayAmt
+     , A.FEDU_DEPT_NO AS feduDeptNo
+  FROM SMP_EMP_TST A
+ WHERE A.FEDU_EMP_NO = #{feduEmpNo, jdbcType=NUMERIC}
+ <if test="feduEmpNm !=null and feduEmpNm !=''">
+  	<if test="feduEmpNm.equalsIgnoreCase('KING')">
+ 		AND A.FEDU_EMP_NM = #{feduEmpNm, jdbcType=VARCHAR}
+ 	</if>
+ </if>
+</select>
+<select id="selectList06" parameterType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto" resultType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto">
+SELECT
+       A.FEDU_EMP_NO AS feduEmpNo
+     , A.FEDU_EMP_NM AS feduEmpNm
+     , A.FEDU_OCCP_NM AS feduOccpNm
+     , A.FEDU_MNGR_EMP_NO AS feduMngrEmpNo
+     , A.FEDU_HIRE_DT AS feduIpsaDt
+     , A.FEDU_PAY_AMT AS feduPayAmt
+     , A.FEDU_DEPT_NO AS feduDeptNo
+  FROM SMP_EMP_TST A
+ WHERE A.FEDU_EMP_NO = #{feduEmpNo, jdbcType=NUMERIC}
+   <if test="feduEmpNm !=null and feduEmpNm !=''">
+  	<if test="feduEmpNm eq 'KING'.toString()">
+ 		AND A.FEDU_EMP_NM = #{feduEmpNm, jdbcType=VARCHAR}
+ 	</if>
+ 	<if test="feduEmpNm == 'KING'.toString()">
+ 		AND A.FEDU_EMP_NM = #{feduEmpNm, jdbcType=VARCHAR}
+ 	</if>
+ </if>
+</select>
+<select id="selectList07" parameterType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto" resultType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto">
+SELECT
+       A.FEDU_EMP_NO AS feduEmpNo
+     , A.FEDU_EMP_NM AS feduEmpNm
+     , A.FEDU_OCCP_NM AS feduOccpNm
+     , A.FEDU_MNGR_EMP_NO AS feduMngrEmpNo
+     , A.FEDU_HIRE_DT AS feduIpsaDt
+     , A.FEDU_PAY_AMT AS feduPayAmt
+     , A.FEDU_DEPT_NO AS feduDeptNo
+  FROM SMP_EMP_TST A
+ WHERE A.FEDU_EMP_NO = #{feduEmpNo, jdbcType=NUMERIC}
+<if test="feduMngrEmpNo !=null and feduMngrEmpNo !=''">
+	<if test="feduMngrEmpNo == 1">
+		AND A.FEDU_MNGR_EMP_NO = 1111
+	</if>
+	<if test="feduMngrEmpNo &gt; 1 and feduMngrEmpNo &lt; 10 ">
+		AND A.FEDU_MNGR_EMP_NO = 2222
+	</if>
+	<if test="feduMngrEmpNo &gt; 10 and feduMngrEmpNo &lt;=20 ">
+		AND A.FEDU_MNGR_EMP_NO = 3333
+	</if>
+	<if test="feduMngrEmpNo &gt; 20 ">
+		AND A.FEDU_MNGR_EMP_NO = 4444
+	</if>
+</if>
+</select>
+<update id="update04" parameterType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto">
+UPDATE SMP_EMP_TST
+   <set>
+        <if test=" feduEmpNm != null and feduEmpNm != '' "> 
+        	FEDU_EMP_NM = #{feduEmpNm, jdbcType=VARCHAR}
+        </if>
+        <if test=" feduOccpNm != null and feduOccpNm != '' "> 
+        	FEDU_OCCP_NM = #{feduOccpNm, jdbcType=VARCHAR}
+        </if>
+        <if test=" feduMngrEmpNo != null and feduMngrEmpNo != '' "> 
+        	FEDU_MNGR_EMP_NO = #{feduMngrEmpNo, jdbcType=NUMERIC}
+        </if>
+        <if test=" feduIpsaDt != null and feduIpsaDt != '' "> 
+        	FEDU_HIRE_DT = #{feduIpsaDt, jdbcType=VARCHAR}
+         </if>
+        <if test=" feduPayAmt != null and feduPayAmt != '' "> 
+        	FEDU_PAY_AMT = #{feduPayAmt, jdbcType=NUMERIC}
+        </if>
+        <if test=" feduDeptNo != null and feduDeptNo != '' "> 
+        	FEDU_DEPT_NO = #{feduDeptNo, jdbcType=NUMERIC}
+        </if>
+ </set>
+ WHERE FEDU_EMP_NO = #{feduEmpNo, jdbcType=NUMERIC}
+</update>
+<update id="update03" parameterType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst000Dto">
+UPDATE SMP_EMP_TST
+   SET <trim suffixOverrides=",">
+        <if test=" feduEmpNm != null and feduEmpNm != '' "> 
+        	FEDU_EMP_NM = #{feduEmpNm, jdbcType=VARCHAR}
+        </if>
+        <if test=" feduOccpNm != null and feduOccpNm != '' "> 
+        	FEDU_OCCP_NM = #{feduOccpNm, jdbcType=VARCHAR}
+        </if>
+        <if test=" feduMngrEmpNo != null and feduMngrEmpNo != '' "> 
+        	FEDU_MNGR_EMP_NO = #{feduMngrEmpNo, jdbcType=NUMERIC}
+        </if>
+        <if test=" feduIpsaDt != null and feduIpsaDt != '' "> 
+        	FEDU_HIRE_DT = #{feduIpsaDt, jdbcType=VARCHAR}
+         </if>
+        <if test=" feduPayAmt != null and feduPayAmt != '' "> 
+        	FEDU_PAY_AMT = #{feduPayAmt, jdbcType=NUMERIC}
+        </if>
+        <if test=" feduDeptNo != null and feduDeptNo != '' "> 
+        	FEDU_DEPT_NO = #{feduDeptNo, jdbcType=NUMERIC}
+        </if>
+ </trim>
+ WHERE FEDU_EMP_NO = #{feduEmpNo, jdbcType=NUMERIC}
+</update>
+<select id="selectList08" parameterType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst002selectList08InDto" resultType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst002selectList08OutDto">
+SELECT
+       A.FEDU_EMP_NO AS feduEmpNo
+     , A.FEDU_EMP_NM AS feduEmpNm
+     , A.FEDU_OCCP_NM AS feduOccpNm
+     , A.FEDU_MNGR_EMP_NO AS feduMngrEmpNo
+     , A.FEDU_HIRE_DT AS feduIpsaDt
+     , A.FEDU_PAY_AMT AS feduPayAmt
+     , A.FEDU_DEPT_NO AS feduDeptNo
+  FROM SMP_EMP_TST A
+WHERE A.FEDU_DEPT_NO = '30'
+
+<if test="master.detailCount &gt; 0 ">
+
+	AND A.FEDU_DEPT_NO IN 
+	
+	<foreach close=")" collection="master.detailDto" item="item" open="(" separator=",">
+	             
+ 				 #{item.feduEmpNo, jdbcType=NUMERIC}
+ 				 
+	</foreach>
+</if>
+</select>
+<select id="selectList09" resultType="bxm.dft.smp.online.dbio.dto.DSmpEmpTst002selectList09OutDto">
+SELECT
+       A.FEDU_EMP_NO AS feduEmpNo
+     , A.FEDU_EMP_NM AS feduEmpNm
+     , A.FEDU_OCCP_NM AS feduOccpNm
+     , A.FEDU_MNGR_EMP_NO AS feduMngrEmpNo
+     , A.FEDU_HIRE_DT AS feduIpsaDt
+     , A.FEDU_PAY_AMT AS feduPayAmt
+     , A.FEDU_DEPT_NO AS feduDeptNo
+  FROM SMP_EMP_TST A
+WHERE A.FEDU_DEPT_NO = '30'
+
+<if test="master.itemCount &gt; 0 ">
+
+	AND A.FEDU_DEPT_NO IN 
+	
+	<foreach close=")" collection="master.itemArray" item="item" open="(" separator=",">
+	             
+ 				 #{item}
+ 				 
+	</foreach>
+</if>
+</select>
+</mapper>

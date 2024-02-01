@@ -1,0 +1,12 @@
+OMM bxm.dft.smp.online.dbio.dto.DSmpEmpTst002selectList08OutDto
+<description="Employee Info TST">
+{
+	String rowId<length=50 description="Row ID">;
+	Integer feduEmpNo<length=4 description="Employee id">;
+	String feduEmpNm<length=10 description="Employee name">;
+	String feduOccpNm<length=9 description="Employee Occupy">;
+	Integer feduMngrEmpNo<length=4 description="Employee manager id">;
+	String feduIpsaDt<length=8 description="Employee entering date">;
+	BigDecimal feduPayAmt<length=19 decimal=2 description="Employee salary">;
+	Integer feduDeptNo<length=2 description="Employee department">;
+}

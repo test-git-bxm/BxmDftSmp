@@ -1,0 +1,24 @@
+#TestCaseName=단건 수정(Lock Update)
+#EndpointUrl=http://bankware:30018/serviceEndpoint/httpService/request.obj
+#EndpointUrlAvailable=http://bankware:30018/serviceEndpoint/httpService/request.obj
+#TrxMode=
+#InputHeader=
+<header default="true">
+<trxCd>SSMP1001A003</trxCd>
+<chlType>BS</chlType>
+<msgReqDttm>20160907134750931</msgReqDttm>
+<domainId>DEFAULT</domainId>
+</header>
+#InputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1001A003InDto
+#InputOmm=
+<SSMP1001A003InDto>
+    <feduEmpNo>7778</feduEmpNo>
+    <feduEmpNm>hooooon</feduEmpNm>
+    <feduOccpNm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    <feduMngrEmpNo>5</feduMngrEmpNo>
+    <feduIpsaDt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    <feduPayAmt>0.0</feduPayAmt>
+    <feduDeptNo>0</feduDeptNo>
+</SSMP1001A003InDto>
+
+#OutputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1001A003OutDto

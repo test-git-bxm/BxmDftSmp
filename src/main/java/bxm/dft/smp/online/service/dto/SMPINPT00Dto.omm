@@ -1,0 +1,6 @@
+OMM bxm.dft.smp.online.service.dto.SMPINPT00Dto
+<description="업무 공통부">
+{
+	Integer commEmpNo<length=4 description="직원번호">;
+	String commEmpNm<length=10 description="직원명">;
+}

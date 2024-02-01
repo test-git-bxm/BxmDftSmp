@@ -1,0 +1,19 @@
+#TestCaseName=단건 조회
+#EndpointUrl=http://182.162.100.120:7329/serviceEndpoint/httpService/request.obj
+#EndpointUrlAvailable=http://182.162.100.120:7329/serviceEndpoint/httpService/request.obj
+#EndpointUrlAvailable=http://bankware:9525/serviceEndpoint/httpService/request.fld
+#EndpointUrlAvailable=http://bankware:9502/serviceEndpoint/httpService/request.fld
+#TrxMode=
+#InputHeader=
+<header default="true">
+<trxCd>SSMP1001A001</trxCd>
+<chlType>01</chlType>
+<domainId>DEFAULT</domainId>
+</header>
+#InputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1001A001InDto
+#InputOmm=
+<SSMP1001A001InDto>
+    <feduEmpNo>7788</feduEmpNo>
+</SSMP1001A001InDto>
+
+#OutputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1001A001OutDto

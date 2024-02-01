@@ -1,0 +1,28 @@
+#TestCaseName=다건 수정(대상 건수만큼 반복하여 Bean 호출)
+#EndpointUrl=http://bankware:30018/serviceEndpoint/httpService/request.obj
+#EndpointUrlAvailable=http://bankware:30018/serviceEndpoint/httpService/request.obj
+#TrxMode=
+#InputHeader=
+<header default="true">
+<trxCd>SSMP1002A021</trxCd>
+<chlType>01</chlType>
+<msgReqDttm>20160906144649029</msgReqDttm>
+<domainId>DEFAULT</domainId>
+</header>
+#InputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1002A021InDto
+#InputOmm=
+<SSMP1002A021InDto>
+    <grid01_COUNT>1</grid01_COUNT>
+    <grid01_STARTLINE>0</grid01_STARTLINE>
+    <grid01>
+        <feduEmpNo>1230</feduEmpNo>
+        <feduEmpNm>taehoon</feduEmpNm>
+        <feduOccpNm></feduOccpNm>
+        <feduMngrEmpNo>1234</feduMngrEmpNo>
+        <feduIpsaDt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+        <feduPayAmt>0.0</feduPayAmt>
+        <feduDeptNo>0</feduDeptNo>
+    </grid01>
+</SSMP1002A021InDto>
+
+#OutputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1002A021OutDto

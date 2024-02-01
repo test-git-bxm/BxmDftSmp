@@ -1,0 +1,24 @@
+#TestCaseName=다건 수정(selectListLock01)
+#EndpointUrl=http://bankware:30018/serviceEndpoint/httpService/request.obj
+#EndpointUrlAvailable=http://bankware:30018/serviceEndpoint/httpService/request.obj
+#TrxMode=
+#InputHeader=
+<header default="true">
+<trxCd>SSMP1002A023</trxCd>
+<chlType>01</chlType>
+<msgReqDttm>20160906144649029</msgReqDttm>
+<domainId>DEFAULT</domainId>
+</header>
+#InputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1002A023InDto
+#InputOmm=
+<SSMP1002A023InDto>
+    <feduEmpNo>1230</feduEmpNo>
+    <feduEmpNm>hoon</feduEmpNm>
+    <feduOccpNm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    <feduMngrEmpNo>7777</feduMngrEmpNo>
+    <feduIpsaDt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+    <feduPayAmt>7.7</feduPayAmt>
+    <feduDeptNo>7</feduDeptNo>
+</SSMP1002A023InDto>
+
+#OutputOmmFileNm=bxm.dft.smp.online.service.dto.SSMP1002A023OutDto

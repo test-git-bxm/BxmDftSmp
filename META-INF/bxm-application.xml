@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bxm-application xmlns="http://www.bankwareglobal.com/schema/application" xmlns:ns2="http://www.bankwareglobal.com/schema/common" name="BxmDftSmp" loglevel="Default" shared="true" reference-applications="" type="online">
+    <description>BXM Sample Application</description>
+    <datasource>
+        <jndi-datasource name="MainDS" jndi-datasource="DSNXA" jndi-xadatasource="DSXA"/>
+    </datasource>
+    <datasource>
+        <jdbc-datasource name="MainDS" driver-classname="${driver-classname}" uri="${uri}" username="${username}" enc-password="${password}" maxTotal="10" maxIdle="10" validationQuery="select 1 from dual" validationQueryTimeout="60"/>
+    </datasource>
+</bxm-application>
